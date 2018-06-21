@@ -5,37 +5,4 @@
     <artifactId>demo-pa</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    
-
-    <!-- maven server ipaddress -->
-    <repositories>
-        <repository>
-            <id>nexusc</id>
-            <name>Nexus</name>
-            <url>https://dev-cv.saicmotor.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <!-- deploy server ipaddress -->
-    <distributionManagement>
-        <repository>
-            <id>nexus-release</id>
-            <url>https://dev-cv.saicmotor.com/nexus/content/repositories/thirdparty/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshot</id>
-            <url>https://dev-cv.saicmotor.com/nexus/content/repositories/thirdparty-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
-    <modules>
-        <module>maxus-avn-service</module>
-    </modules>
 </project>
